@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h3>HRM_V1</h3>
+<h3 style="margin-left: 200px;">HRM_V1</h3>
+<style>
+  form {
+    justify-content: center;
+
+  }
+
+</style>
 </head>
 <body>
-  <form name = "Tạo form đơn giản_14_06_22" id="inputfrm">
-    <fieldset style="width:400px">
-      <legend>Input Personal informations Form</legend>
-  <P style="background-color:#C0E7A4;
-            font-weight: bold;
-            font-size: large;
-            width: 600;">
-            <b>Input Form</b>
-  </P>
-
+  <form id="inputfrm" style="padding-left: 30px;">
+    <fieldset style="width: 400px;">
+      <legend style="text-align: center;">Input Personal informations Form</legend>
+ 
   <label for="id">Id nhân sự:</label>
   <input type="text" name = "id" placeholder="Id Person" id="id"><br><br>
 
@@ -39,14 +40,24 @@
     </label><br><br/>
   </legend>
 
-      <label for="email" style="width:200px">Email</label>
+    <label for="email" style="width:200px">Email</label>
     <input type="email" name = "email" placeholder="Email@gmail.com" id="emailid"><br><br>
 
     <label for="phone">Điện thoại: </label>
     <input type="tel" name = "phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="phoneid"><br><br>
     
     <input type="submit" value="Thêm mới">
-    <input type="reset" value="Nhập lại">
+    <input type="reset" value="Clear All">
+  </fieldset>
+  </form><br>
+
+  <form id="searchfrm" style="padding-left: 500px;justify-content: center;">
+    <fieldset style="width: 400px;">
+      <legend style="text-align: center;">Search informations Form</legend>
+    <label>Nhập thông tin tìm kiếm</label>
+    <input type="text" id="sear_txt" style="width:200px;">
+    <input type="button" value="Tìm kiếm">
+  </fieldset>
 
   </form>
 
