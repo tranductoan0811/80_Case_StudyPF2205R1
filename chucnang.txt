@@ -11,5 +11,6 @@
 2 _ Tạo các chức năng:
 - Thêm mới
 - Reset lại toàn bộ các thông tin đầu vào
+- sửa , xóa, hiển thị
 
-3 _ Chức năng thể hiện tất cả các thông tin nhân sự đã nhập đến hiện thoại
+3 _ Tìm kiếm
