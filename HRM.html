@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h3>HRM_V1</h3>
+</head>
+<body>
+  <form name = "Tạo form đơn giản_14_06_22" id="inputfrm">
+    <fieldset style="width:400px">
+      <legend>Input Personal informations Form</legend>
+  <P style="background-color:#C0E7A4;
+            font-weight: bold;
+            font-size: large;
+            width: 600;">
+            <b>Input Form</b>
+  </P>
+
+  <label for="id">Id nhân sự:</label>
+  <input type="text" name = "id" placeholder="Id Person" id="id"><br><br>
+
+  <label for="fname">Họ và tên</label>
+  <input type="text" name = "fname" placeholder="Họ và tên" id="nameid"><br><br>
+
+  <label for="dateofbirth">Ngày sinh: </label>
+  <input type="Date" name = "dateofbirth" placeholder="dd/mm/yyyy" height="100px" id="dateid"><br><br>
+
+  <label for="gender">Giới tính: </label>
+  <input type="radio" name = "gender" placeholder="Giới tính" id="maleid"><span>Nam</span>
+  <input type="radio" name = "gender" placeholder="Giới tính" id="femaleid"><span>Nữ</span><br><br>
+
+  <legend>
+    <style>
+      label textarea{
+        vertical-align: middle;
+      }
+    </style>
+
+    <label>Địa chỉ: <textarea cols="30" rows="10" placeholder="Nhập địa chỉ" id="addid"></textarea>
+    
+    </label><br><br/>
+  </legend>
+
+      <label for="email" style="width:200px">Email</label>
+    <input type="email" name = "email" placeholder="Email@gmail.com" id="emailid"><br><br>
+
+    <label for="phone">Điện thoại: </label>
+    <input type="tel" name = "phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="phoneid"><br><br>
+    
+    <input type="submit" value="Thêm mới">
+    <input type="reset" value="Nhập lại">
+
+  </form>
+
+</body>
+
+
+</html>
