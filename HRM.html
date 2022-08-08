@@ -2,32 +2,34 @@
 <html>
 <head>
 <h3 style="margin-left: 200px;">HRM_V1</h3>
-<style>
-  form {
-    justify-content: center;
-
-  }
-
-</style>
+  <style>
+    .parent {
+      display: flex;
+    }
+  </style>
 </head>
-<body>
-  
-  <form id="inputfrm" style="padding-left: 30px;">
+<body onload="displayDsns();">
+  <script src="HRM.js"></script>
+  <div class="parent">
+  <div>
     <fieldset style="width: 400px;">
       <legend style="text-align: center;">Input Personal informations Form</legend>
  
   <label for="id">Id nhân sự:</label>
-  <input type="text" name = "id" placeholder="Id Person" id="id"><br><br>
+  <input type="text" name = "id" placeholder="Id Person" id="idns"><br><br>
 
   <label for="fname">Họ và tên</label>
-  <input type="text" name = "fname" placeholder="Họ và tên" id="nameid"><br><br>
+  <input type="text" name = "fname" placeholder="Họ và tên" id="fnamens"><br><br>
 
   <label for="dateofbirth">Ngày sinh: </label>
-  <input type="Date" name = "dateofbirth" placeholder="dd/mm/yyyy" height="100px" id="dateid"><br><br>
+  <input type="Date" name = "dateofbirth" placeholder="dd/mm/yyyy" height="100px" id="datens"><br><br>
 
   <label for="gender">Giới tính: </label>
-  <input type="radio" name = "gender" placeholder="Giới tính" id="maleid"><span>Nam</span>
-  <input type="radio" name = "gender" placeholder="Giới tính" id="femaleid"><span>Nữ</span><br><br>
+      <select id="gender">
+        <option></option>
+        <option value="Nam">Nam</option>
+        <option value="Nu">Nữ</option>
+      </select><br><br>
 
   <legend>
     <style>
@@ -36,35 +38,51 @@
       }
     </style>
 
-    <label>Địa chỉ: <textarea cols="30" rows="10" placeholder="Nhập địa chỉ" id="addid"></textarea>
+    <label>Địa chỉ: <textarea cols="30" rows="10" placeholder="Nhập địa chỉ" id="addns"></textarea>
     
     </label><br><br/>
   </legend>
 
     <label for="email" style="width:200px">Email</label>
-    <input type="email" name = "email" placeholder="Email@gmail.com" id="emailid"><br><br>
+    <input type="email" name = "email" placeholder="Email@gmail.com" id="emailns"><br><br>
 
     <label for="phone">Điện thoại: </label>
-    <input type="tel" name = "phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="phoneid"><br><br>
+    <input type="text" name = "phone" id="phonens"><br><br>
     
-    <input type="submit" value="Add New">
-    <input type="reset" value="Clear All">
-    <p><b>Hiển thị</b></p>
+    <button id="add" onclick="addNew();">Thêm mới</button>
+    <button id="update" onclick="update() ;">Update</button>
+    <input type="hidden" id="index" />
   </fieldset>
-  </form><br>
+</div><br>
 
-
-  <form id="searchfrm" style="padding-left: 500px">
-    <fieldset style="width: 400px;">
-      <legend style="text-align: center;">Search informations Form</legend>
-    <label>Nhập thông tin tìm kiếm</label>
-    <input type="text" id="sear_txt" style="width:200px;">
-    <input type="button" value="Tìm kiếm">
+  <div>
+    <div>
+      <fieldset>
+      <legend style="text-align: center;">Bảng thông tin nhân sự</legend>
+    <table id="table" style="margin-left: 5px" border = 1></table><br/><br/>
   </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend style="text-align: center;">Bảng tìm kiếm</legend>
+        <p style="margin-left: 50px;">Nhập ký tự tìm kiếm liên quan đến tên nhân sự</p>
+        <input type="text" placeholder="Nhập ký tự" style="width: 200px;margin-left: 50px;" id="input_search" oninput="timkiem();">
+    
+        <table id="table2" style="margin-left: 50px" border = 1></table>
+        <br /><br />
+      </fieldset>
+    </div>  
+  </div>
+</div>
 
-  </form>
+
+ 
 
 </body>
 
 
 </html>
+
+
+
+
