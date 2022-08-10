@@ -15,17 +15,17 @@
     <fieldset style="width: 400px;">
       <legend style="text-align: center;">Input Personal informations Form</legend>
  
-  <label for="id">Id nhân sự:</label>
-  <input type="text" name = "id" placeholder="Id Person" id="idns"><br><br>
+  <label for="id">Id nhân sự: </label>
+  <input type="text" name = "id" placeholder="Id Person" id="idns" style="height: 30px;width: 300px; margin-left: 5px;font-size: 16px;"><br><br>
 
   <label for="fname">Họ và tên</label>
-  <input type="text" name = "fname" placeholder="Họ và tên" id="fnamens"><br><br>
+  <input type="text" name = "fname" placeholder="Họ và tên" id="fnamens" style="height: 30px;width: 300px; margin-left: 13px;font-size: 16px;"><br><br>
 
   <label for="dateofbirth">Ngày sinh: </label>
-  <input type="Date" name = "dateofbirth" placeholder="dd/mm/yyyy" height="100px" id="datens"><br><br>
+  <input type="Date" name = "dateofbirth" placeholder="dd/mm/yyyy" height="100px" id="datens" style="width: 150px;height: 30px;margin-left: 5px;"><br><br>
 
   <label for="gender">Giới tính: </label>
-      <select id="gender">
+      <select id="gender" style="width: 150px;height: 30px;margin-left: 12px;">
         <option></option>
         <option value="Nam">Nam</option>
         <option value="Nu">Nữ</option>
@@ -38,20 +38,20 @@
       }
     </style>
 
-    <label>Địa chỉ: <textarea cols="30" rows="10" placeholder="Nhập địa chỉ" id="addns"></textarea>
+    <label>Địa chỉ: <textarea cols="30" rows="10" placeholder="Nhập địa chỉ" id="addns" style="margin-left: 19px;"></textarea>
     
     </label><br><br/>
   </legend>
 
-    <label for="email" style="width:200px">Email</label>
-    <input type="email" name = "email" placeholder="Email@gmail.com" id="emailns"><br><br>
+    <label for="email">Email</label>
+    <input type="email" name = "email" placeholder="Email@gmail.com" id="emailns" style="width: 300px;height: 30px;margin-left: 32px;"><br><br>
 
     <label for="phone">Điện thoại: </label>
-    <input type="text" name = "phone" id="phonens"><br><br>
+    <input type="text" name = "phone" id="phonens" style="width: 300px;height: 30px;"placeholder = "0123 456 789"><br><br>
     
-    <button id="add" onclick="addNew();">Thêm mới</button>
-    <button id="update" onclick="update() ;">Update</button>
-    <input type="hidden" id="index" />
+    <button id="add" onclick="addNew();" style="height: 25px; color: red; font-size: 14px; font-weight: bold;">Thêm mới</button>
+    <button id="update" onclick="update() ;" style="height: 25px; color: blue; font-size: 14px; font-weight: bold;">Update</button>
+    <input type="hidden" id="index">
   </fieldset>
 </div><br>
 
@@ -66,7 +66,7 @@
       <fieldset>
         <legend style="text-align: center;">Bảng tìm kiếm</legend>
         <p style="margin-left: 50px;">Nhập ký tự tìm kiếm liên quan đến tên nhân sự</p>
-        <input type="text" placeholder="Nhập ký tự" style="width: 200px;margin-left: 50px;" id="input_search" oninput="timkiem();">
+        <input type="text" placeholder="Nhập ký tự" style="width: 200px;margin-left: 50px; height: 30px; font-size: 16px;" id="input_search" oninput="timkiem();">
     
         <table id="table2" style="margin-left: 50px" border = 1></table>
         <br /><br />

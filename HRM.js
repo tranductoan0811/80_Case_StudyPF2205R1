@@ -71,7 +71,8 @@ function displayDsns() {
     <th>Địa chỉ</th>
     <th>Email</th>
     <th>Điện thoại</th>
-    <th>Sửa - Xóa</th>
+    <th>Sửa</th>
+    <th>Xóa</th>
   </tr>`;
 
   for (let i = 0; i < arr.length; i++) {
@@ -84,17 +85,16 @@ function displayDsns() {
     <td>${arr[i].email}</td>
     <td>${arr[i].phone}</td>
     <td>
-    <input type='button' value='Sửa' onclick = 'sua(${i});'>
-    <input type='button' value='Xóa' onclick = 'xoa(${i});'>
-    
-        
+      <input type='button' value='Sửa' onclick = 'sua(${i});' style="color: Blue; ; font-size: 14px; font-weight: bold;">
+    </td>
+    <td>
+      <input type='button' value='Xóa' onclick = 'xoa(${i});' style="color: red; ; font-size: 14px; font-weight: bold;">
     </td>
    </tr>`;
    
   }   
   
   document.getElementById("table").innerHTML = content;
-
 
 }
 
