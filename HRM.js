@@ -85,10 +85,14 @@ function displayDsns() {
     <td>${arr[i].email}</td>
     <td>${arr[i].phone}</td>
     <td>
-      <input type='button' value='Sửa' onclick = 'sua(${i});' style="color: Blue; ; font-size: 14px; font-weight: bold;">
+      <i class="fa-solid fa-pen-to-square"></i>
+      <input type='button' value='Sửa' onclick = 'sua(${i});' style='color: Blue; ; font-size: 14px; font-weight: bold;'>
+      
     </td>
     <td>
-      <input type='button' value='Xóa' onclick = 'xoa(${i});' style="color: red; ; font-size: 14px; font-weight: bold;">
+      <i class="fa-solid fa-trash-can"></i>
+      <input type='button' value='Xóa' onclick = 'xoa(${i});' style='color: red; font-size: 14px; font-weight: bold;'>
+      
     </td>
    </tr>`;
    

@@ -1,35 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 <h3 class="tieude">HUMAN RESOURCE MANAGEMENT (HRM_V1)</h3>
-  <style>
-    .parent {
-      display: flex;
-      margin-left: 500px;
-    }
-
-    table, th, td {
-      border: 1px solid white;
-      font-size: 15px;
-      font-family:"Arial";
-      color: white;
-      height: 30px;
-      background-color: #6A85A1 ;
-    }
-
-    .tieude {
-
-      /* display: table-cell; */
-      display: flex;
-      justify-content:center;
-      background-color: #7793B0;
-      align-items:center;
-      vertical-align: middle;
-      color: white;
-      height: 40px;
-    }
-
-  </style>
+  
 </head>
 <body onload="displayDsns();">
   <script src="HRM.js"></script>
@@ -62,7 +37,7 @@
       }
     </style>
 
-    <label>Địa chỉ: <textarea cols="30" rows="10" placeholder="Nhập địa chỉ" id="addns" style="margin-left: 19px;"></textarea>
+    <label>Địa chỉ: <textarea cols="30" rows="10" placeholder="Nhập địa chỉ" id="addns" style="margin-left: 19px;width: 300px;"></textarea>
     
     </label><br><br/>
   </legend>
@@ -73,8 +48,15 @@
     <label for="phone">Điện thoại: </label>
     <input type="text" name = "phone" id="phonens" style="width: 300px;height: 30px;font-size: 16px;"placeholder = "0123 456 789"><br><br>
     
-    <button id="add" onclick="addNew();" style="height: 25px; color: red; font-size: 14px; font-weight: bold;margin-left: 90px;">Thêm mới</button>
-    <button id="update" onclick="update() ;" style="height: 25px; color: blue; font-size: 14px; font-weight: bold;margin-left: 90px;">Update</button>
+    <button id="add" onclick="addNew();" class="btn_add">
+      <i class="fa-solid fa-circle-plus"></i>
+      Thêm mới
+    </button>
+    <button id="update" onclick="update();" class="btn_update">
+      <i class="fa-solid fa-arrows-rotate"></i>
+      Cập nhật
+    </button>
+
     <input type="hidden" id="index">
   </fieldset>
 </div><br>
@@ -85,15 +67,18 @@
       <legend style="text-align: center;font-size: 16px; font-weight: bold;">Bảng thông tin nhân sự</legend>
     <table id="table"></table><br/><br/>
   </fieldset>
-    </div><br/><br/>
+    </div><br><br>
     <div>
       <fieldset>
         <legend style="text-align: center;font-size: 16px; font-weight: bold;">Bảng tìm kiếm</legend>
-        <p style="margin-left: 50px; color: blue; font-weight: bold;">Nhập ký tự tìm kiếm liên quan đến ( tên ) hoặc ( Id ) nhân sự</p>
-        <input type="text" placeholder="Nhập ký tự" style="width: 300px;margin-left: 50px; height: 30px; font-size: 16px; color: blue;" id="input_search" oninput="timkiem();"><br><br>
-    
+        <p style="margin-left: 50px; color: blue; font-weight: bold;">
+          Nhập ký tự tìm kiếm liên quan đến ( tên ) hoặc ( Id ) nhân sự
+        </p>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Nhập ký tự" style="width: 300px;margin-left: 5px; height: 30px; font-size: 16px; color: blue;" id="input_search" oninput="timkiem();"><br><br>
+       
         <table id="table2" style="margin-left: 50px" border = 1></table>
-        <br /><br />
+        <br/><br/>
       </fieldset>
     </div>  
   </div>
@@ -101,6 +86,8 @@
 
 </body>
 </html>
+
+
 
 
 

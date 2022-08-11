@@ -1,0 +1,65 @@
+.parent {
+  display: flex;
+  margin-left: 500px;
+}
+
+table, th, td {
+  border: 1px solid white;
+  font-size: 15px;
+  font-family:"tahoma";
+  color: white;
+  height: 30px;
+  background-color: #6A85A1 ;
+}
+
+.tieude {
+
+  /* display: table-cell; */
+  display: flex;
+  justify-content:center;
+  background-color: #7793B0;
+  align-items:center;
+  vertical-align: middle;
+  color: white;
+  height: 40px;
+}
+
+.btn_add {
+  border: 2px dashed red;
+  border-radius: 10px;
+  width: 120px;
+  height: 35px; 
+  color: red; 
+  font-size: 14px; 
+  font-weight: bold;
+  margin-left: 80px;
+
+}
+
+.btn_update {
+  border: 2px dashed blue;
+  border-radius: 10px;
+  width: 120px;
+  height: 35px; 
+  color: blue; 
+  font-size: 14px; 
+  font-weight: bold; 
+  margin-left: 50px;
+}
+
+.fa-solid.fa-trash-can
+{
+    color: whitesmoke;
+}
+
+.fa-solid.fa-pen-to-square
+{
+    color: whitesmoke;
+}
+
+.fa-solid.fa-magnifying-glass {
+  margin-left: 25px;
+  color: blue;
+
+
+}
