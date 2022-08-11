@@ -1,28 +1,30 @@
+Ứng dụng quản lý nhân sự _ V1 _ 11-08-2022
 
-Ứng dụng quản lý nhân sự
 1 _ Tạo form nhập liệu với các trường thông tin
-- id nhân sự ( không dấu, không cách, có thể kết hợp số hoặc dấu gạch dưới )
-- Họ tên ( nhập full name )
-- Ngày sinh ( DD / MM / YYYY )
-- Giới tính ( Nam / Nữ )
-- Địa chỉ ( nhập đầy đủ, thí dụ: Số nhà, thôn xóm, xã / phường, Quận / huyện, tỉnh / thành phố)
-- Email ( qag@gmail.com )
-- Điện thoại ( có dấu phân tách theo nhịp: 4 số đầu, 3 số sau một nhịp. VD: 0123 456 789 )
+  1.1- id nhân sự ( không dấu, không cách, có thể kết hợp số hoặc dấu gạch dưới )
+  1.2- Họ tên ( nhập full name )
+  1.3- Ngày sinh ( DD / MM / YYYY )
+  1.4- Giới tính ( Nam / Nữ )
+  1.5- Địa chỉ ( nhập đầy đủ, thí dụ: Số nhà, thôn xóm, xã / phường, Quận / huyện, tỉnh / thành phố)
+  1.6- Email ( qag@gmail.com )
+  1.7- Điện thoại ( có dấu phân tách theo nhịp: 4 số đầu, 3 số sau một nhịp. VD: 0123 456 789 )
 
 2 _ Tạo các chức năng:
-- Thêm mới: 
-  * Người dùng phải điền đủ tất cả thông tin mới cho lưu, nếu thiếu một trong các trường thì hiện thông báo và không cho lưu..
-  * Sau khi nhấn nút thêm mới, thì Reset lại toàn bộ các thông tin đầu vào của form input.
+  2.1- Thêm mới: 
+    - Người dùng phải điền đủ tất cả thông tin mới cho lưu, 
+    nếu thiếu một trong các trường thì hiện thông báo và không cho lưu..
+    - Sau khi nhấn nút thêm mới, thì Reset lại toàn bộ các thông tin đầu vào của form input.
 
-- sửa: nhấn nút sửa thì thông tin trả về trên form input để user chỉnh sửa.
-  User có thể chỉnh sửa bất cứ trường nào. 
-  Sau khi chỉnh sửa xong, nhấn nút update để cập nhật thông tin sau khi chỉnh sửa. 
+  2.2- sửa: nhấn nút sửa thì thông tin trả về trên form input để user chỉnh sửa.
+    - User có thể chỉnh sửa bất cứ trường nào. 
+    - Sau khi chỉnh sửa xong, nhấn nút update để cập nhật thông tin sau khi chỉnh sửa. 
 
-- xóa: user chọn dòng muốn xóa trong bảng thông tin nhân sự. 
-        Trước khi xóa, hiển thị dòng nhắc có chắc chắn xóa hay không ?
+  2.3- xóa: 
+    - user chọn dòng muốn xóa trong bảng thông tin nhân sự. 
+    - Trước khi xóa, hiển thị dòng nhắc có chắc chắn xóa hay không ?
 
-- Hiển thị toàn bộ danh sách nhân sự
+  2.4- Hiển thị toàn bộ danh sách nhân sự
 
 3 _ Tìm kiếm
-- Tìm kiểm theo từ khóa bất kỳ nhập vào theo trường id hoặc tên
-- Hiển thị bảng trả về kết quả tìm kiếm
+  3.1- Tìm kiểm theo từ khóa bất kỳ nhập vào theo trường id hoặc tên
+  3.2- Hiển thị bảng trả về kết quả tìm kiếm
