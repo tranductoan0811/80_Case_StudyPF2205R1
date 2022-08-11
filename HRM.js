@@ -157,7 +157,9 @@ function timkiem() {
   var searchArr = [];
 
   for (let i = 0; i < arr.length; i++) {
-    if(arr[i].name.toUpperCase().includes(inputSearch.toUpperCase()) == true) {
+    if (
+      (arr[i].name.toUpperCase().includes(inputSearch.toUpperCase()) == true) || (arr[i].id.toUpperCase().includes(inputSearch.toUpperCase()) == true)) 
+      {
       searchArr.push(arr[i]);
     }
   }

@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<h3 style="margin-left: 200px;">HRM_V1</h3>
+<h3 class="tieude">HUMAN RESOURCE MANAGEMENT (HRM_V1)</h3>
   <style>
     .parent {
       display: flex;
+      margin-left: 300px;
     }
+
+    table, th, td {
+      border: 1px solid white;
+      font-size: 15px;
+      font-family:"Arial";
+      color: white;
+      height: 30px;
+      background-color: #6A85A1 ;
+    }
+
+    .tieude {
+
+      /* display: table-cell; */
+      display: flex;
+      justify-content:center;
+      background-color: #7793B0;
+      align-items:center;
+      vertical-align: middle;
+      color: white;
+      height: 40px;
+    }
+
   </style>
 </head>
 <body onload="displayDsns();">
   <script src="HRM.js"></script>
   <div class="parent">
-  <div>
-    <fieldset style="width: 400px;">
-      <legend style="text-align: center;">Input Personal informations Form</legend>
+  <div >
+    <fieldset style="width: 400px;" class="input_form">
+      <legend style="text-align: center;font-size: 16px; font-weight: bold;color: blue;">Input Personal informations Form</legend>
  
-  <label for="id">Id nhân sự: </label>
-  <input type="text" name = "id" placeholder="Id Person" id="idns" style="height: 30px;width: 300px; margin-left: 5px;font-size: 16px;"><br><br>
+  <label for="id" style="margin-top: 10px;">Id nhân sự: </label>
+  <input type="text" name = "id" placeholder="Id Person" id="idns" style="height: 30px;width: 300px; margin-left: 5px;font-size: 16px;margin-top: 10px;"><br><br>
 
   <label for="fname">Họ và tên</label>
   <input type="text" name = "fname" placeholder="Họ và tên" id="fnamens" style="height: 30px;width: 300px; margin-left: 13px;font-size: 16px;"><br><br>
@@ -48,7 +71,7 @@
     <input type="email" name = "email" placeholder="Email@gmail.com" id="emailns" style="width: 300px;height: 30px;margin-left: 32px;"><br><br>
 
     <label for="phone">Điện thoại: </label>
-    <input type="text" name = "phone" id="phonens" style="width: 300px;height: 30px;"placeholder = "0123 456 789"><br><br>
+    <input type="text" name = "phone" id="phonens" style="width: 300px;height: 30px;font-size: 16px;"placeholder = "0123 456 789"><br><br>
     
     <button id="add" onclick="addNew();" style="height: 25px; color: red; font-size: 14px; font-weight: bold;margin-left: 90px;">Thêm mới</button>
     <button id="update" onclick="update() ;" style="height: 25px; color: blue; font-size: 14px; font-weight: bold;margin-left: 90px;">Update</button>
@@ -59,15 +82,15 @@
   <div>
     <div>
       <fieldset>
-      <legend style="text-align: center;">Bảng thông tin nhân sự</legend>
-    <table id="table" style="margin-left: 5px" border = 1></table><br/><br/>
+      <legend style="text-align: center;font-size: 16px; font-weight: bold;">Bảng thông tin nhân sự</legend>
+    <table id="table"></table><br/><br/>
   </fieldset>
-    </div>
+    </div><br/><br/>
     <div>
       <fieldset>
-        <legend style="text-align: center;">Bảng tìm kiếm</legend>
-        <p style="margin-left: 50px;">Nhập ký tự tìm kiếm liên quan đến tên nhân sự</p>
-        <input type="text" placeholder="Nhập ký tự" style="width: 200px;margin-left: 50px; height: 30px; font-size: 16px;" id="input_search" oninput="timkiem();">
+        <legend style="text-align: center;font-size: 16px; font-weight: bold;">Bảng tìm kiếm</legend>
+        <p style="margin-left: 50px; color: blue; font-weight: bold;">Nhập ký tự tìm kiếm liên quan đến ( tên ) hoặc ( Id ) nhân sự</p>
+        <input type="text" placeholder="Nhập ký tự" style="width: 300px;margin-left: 50px; height: 30px; font-size: 16px; color: blue;" id="input_search" oninput="timkiem();"><br><br>
     
         <table id="table2" style="margin-left: 50px" border = 1></table>
         <br /><br />
