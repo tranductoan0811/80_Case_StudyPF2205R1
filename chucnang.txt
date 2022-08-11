@@ -1,17 +1,28 @@
 
 Ứng dụng quản lý nhân sự
 1 _ Tạo form nhập liệu với các trường thông tin
-- id nhân sự
-- Họ tên
+- id nhân sự ( không dấu, không cách, có thể kết hợp số hoặc dấu gạch dưới )
+- Họ tên ( nhập full name )
 - Ngày sinh ( DD / MM / YYYY )
-- Giới tính
-- Địa chỉ
-- Email
-- Điện thoại
+- Giới tính ( Nam / Nữ )
+- Địa chỉ ( nhập đầy đủ, thí dụ: Số nhà, thôn xóm, xã / phường, Quận / huyện, tỉnh / thành phố)
+- Email ( qag@gmail.com )
+- Điện thoại ( có dấu phân tách theo nhịp: 4 số đầu, 3 số sau một nhịp. VD: 0123 456 789 )
 
 2 _ Tạo các chức năng:
-- Thêm mới
-- Reset lại toàn bộ các thông tin đầu vào
-- sửa , xóa, hiển thị
+- Thêm mới: 
+  * Người dùng phải điền đủ tất cả thông tin mới cho lưu, nếu thiếu một trong các trường thì hiện thông báo và không cho lưu..
+  * Sau khi nhấn nút thêm mới, thì Reset lại toàn bộ các thông tin đầu vào của form input.
+
+- sửa: nhấn nút sửa thì thông tin trả về trên form input để user chỉnh sửa.
+  User có thể chỉnh sửa bất cứ trường nào. 
+  Sau khi chỉnh sửa xong, nhấn nút update để cập nhật thông tin sau khi chỉnh sửa. 
+
+- xóa: user chọn dòng muốn xóa trong bảng thông tin nhân sự. 
+        Trước khi xóa, hiển thị dòng nhắc có chắc chắn xóa hay không ?
+
+- Hiển thị toàn bộ danh sách nhân sự
 
 3 _ Tìm kiếm
+- Tìm kiểm theo từ khóa bất kỳ nhập vào theo trường id hoặc tên
+- Hiển thị bảng trả về kết quả tìm kiếm
