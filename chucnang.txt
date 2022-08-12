@@ -13,11 +13,12 @@
   2.1- Thêm mới: 
     - Người dùng phải điền đủ tất cả thông tin mới cho lưu, 
     nếu thiếu một trong các trường thì hiện thông báo và không cho lưu..
-    - Sau khi nhấn nút thêm mới, thì Reset lại toàn bộ các thông tin đầu vào của form input.
+    - Sau khi nhấn nút thêm mới, thì Reset lại form input.
 
   2.2- sửa: nhấn nút sửa thì thông tin trả về trên form input để user chỉnh sửa.
     - User có thể chỉnh sửa bất cứ trường nào. 
-    - Sau khi chỉnh sửa xong, nhấn nút update để cập nhật thông tin sau khi chỉnh sửa. 
+    - Sau khi chỉnh sửa xong, nhấn nút update để cập nhật thông tin sau khi chỉnh sửa.
+    và Reset lại form input.
 
   2.3- xóa: 
     - user chọn dòng muốn xóa trong bảng thông tin nhân sự. 
@@ -26,5 +27,5 @@
   2.4- Hiển thị toàn bộ danh sách nhân sự
 
 3 _ Tìm kiếm
-  3.1- Tìm kiểm theo từ khóa bất kỳ nhập vào theo trường id hoặc tên
+  3.1- Tìm kiểm theo từ khóa bất kỳ nhập vào theo trường ( id ) hoặc ( tên )
   3.2- Hiển thị bảng trả về kết quả tìm kiếm
